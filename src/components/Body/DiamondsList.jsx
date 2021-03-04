@@ -30,7 +30,7 @@ export default function DiamondsList({ }) {
   }, [history.location.search])
 
   useEffect(() => {
-    getDiamonds(`http://localhost:8000/villas?_limit=6&_page=${page}`)
+    getDiamonds(`http://localhost:8000/diamonds?_limit=6&_page=${page}`)
   }, [page])
 
   const onPaginationChange = (e, value) => {
@@ -44,7 +44,7 @@ export default function DiamondsList({ }) {
         {
           diamonds.map(item => (
             <Grid key={item.id} item xs={12} sm={6} lg={4}>
-              <DiamondCard data={item} url={`http://localhost:8000/villas?_limit=6&_page=${page}`} />
+              <DiamondCard data={item} url={`http://localhost:8000/diamonds?_limit=6&_page=${page}`} />
             </Grid>
           ))
         }

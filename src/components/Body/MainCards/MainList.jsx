@@ -137,11 +137,11 @@ export default function MainList({ }) {
       </p>
       <div className={classes.searchControl}>
         <FormControl className={[classes.margin, classes.inputSearch].join(' ')}>
-          <InputLabel htmlFor="demo-customized-textbox"  placeholder = "Name of Villa" />
+          <InputLabel htmlFor="demo-customized-textbox"  placeholder = "Name of Diamond" />
           <BootstrapInput onChange={(e) => {
             e.preventDefault();
             setInpSearch(e.target.value)
-          }} value={inpSearch} placeholder='Write the name of Villa' id="demo-customized-textbox" />
+          }} value={inpSearch} placeholder='Write the name of Diamon' id="demo-customized-textbox" />
         </FormControl>
         <FormControl className={[classes.margin, classes.inputCountry].join(' ')}>
           <InputLabel htmlFor="demo-customized-select-native">Country</InputLabel>
